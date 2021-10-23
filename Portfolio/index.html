@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>richou5e</title>
+    <link rel="stylesheet" href="asset/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Capriola&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <audio
+        src="/Portfolio/asset/羽肿 - Windy Hill (BGM).mp3"
+        id="myaudio"
+        autoplay
+        loop
+      ></audio>
+      <div class="header">
+        <ul class="navi">
+          <div class="logo">
+            <a href="#">
+              <span class="first"> richou </span>
+              <span style="color: yellow; margin: 0px"> 5e </span>
+            </a>
+          </div>
+          <div class="menu">
+            <li><a onclick="scrolltoDiv('home')">HOME</a></li>
+            <li><a onclick="scrolltoDiv('about')">ABOUT</a></li>
+            <li><a onclick="scrolltoDiv('service')">SERVICE</a></li>
+            <li><a onclick="scrolltoDiv('skills')">SKILLS</a></li>
+            <li><a onclick="scrolltoDiv('contact')">CONTACT</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="introduction" id="home">
+          <img
+            class="myava"
+            src="/Portfolio/asset/133661045_1083723915373334_7268320295418369134_n.jpg"
+            alt="ảnh giới thiệu"
+            width="30%"
+            height="30%"
+          />
+          <div class="introduce-box">
+            <div class="introduce-name">
+              <div class="hello">Hello, my name is</div>
+              <div class="name">Gia Phu</div>
+            </div>
+            <div class="short-introduce-script">
+              <li>Welcome to my portfolio.</li>
+              <li>There's something fantastic about myself.</li>
+              <li class="bottom">Let's explore it.</li>
+            </div>
+            <div class="get-info-button">
+              <a href="#footer">GET MORE INFORMATION</a>
+            </div>
+          </div>
+        </div>
+        <div class="about" id="about">
+          <div class="about-box">
+            <div class="about-title">ABOUT ME</div>
+            <div class="information-box">
+              <img
+                src="/Portfolio/asset/z2386326744333_e0c4bcd330c921d435480bb99249cf7e.jpg"
+                alt=""
+                class="myavatar"
+                width="20%"
+                height="50%"
+              />
+              <div class="information-small-box">
+                <div class="information-script">
+                  I am a developer with an inexhaustible aspiration for coding,
+                  especially web design. Additionally, I am also interested in
+                  reading papers about Artificial Intelligence. After 2 years at
+                  university, my presentation skill has been improved clearly
+                  and I am very confident when engaging presentations to a
+                  variety of audiences. In my free time, I like watching fooball
+                  match and listening to music.
+                </div>
+                <div class="cv-button">Download CV</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service" id="service">
+          <div class="service-box">
+            <div class="service-title">MY SERVICES</div>
+            <div class="service-list">
+              <div class="service-item">
+                <i class="fas fa-window-maximize"></i>
+                <div class="service-item-name">Web design</div>
+              </div>
+              <div class="service-item">
+                <i class="fas fa-chart-pie"></i>
+                <div class="service-item-name">Data Analyst</div>
+              </div>
+              <div class="service-item">
+                <i class="fas fa-database"></i>
+                <div class="service-item-name">Database design</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills" id="skills">
+          <div class="skill-bounding">
+            <div class="skill-title">MY SKILLS</div>
+            <div class="skill-box">
+              <div class="left-column">
+                <div class="left-column-title">
+                  My social skills & experiences
+                </div>
+                <div class="left-column-script">
+                  I have experiences in many programming languages. I have
+                  gained them from practices, competitions, jobs I have taken
+                  part in. I am also improving my knowlegdes in them, and study
+                  more about the fields involved to them.
+                </div>
+                <div class="read-more">Read more</div>
+              </div>
+              <div class="right-column">
+                <div class="language-box">
+                  <div class="language-title">
+                    <div class="language-name">HTML</div>
+                    <div class="percent">70%</div>
+                  </div>
+                  <div class="value">
+                    <div class="html-value" id="value"></div>
+                  </div>
+                </div>
+                <div class="language-box">
+                  <div class="language-title">
+                    <div class="language-name">CSS</div>
+                    <div class="percent">50%</div>
+                  </div>
+                  <div class="value">
+                    <div class="css-value" id="value"></div>
+                  </div>
+                </div>
+                <div class="language-box">
+                  <div class="language-title">
+                    <div class="language-name">JavaScript</div>
+                    <div class="percent">20%</div>
+                  </div>
+                  <div class="value">
+                    <div class="js-value" id="value"></div>
+                  </div>
+                </div>
+                <div class="language-box">
+                  <div class="language-title">
+                    <div class="language-name">PHP</div>
+                    <div class="percent">50%</div>
+                  </div>
+                  <div class="value">
+                    <div class="php-value" id="value"></div>
+                  </div>
+                </div>
+                <div class="language-box">
+                  <div class="language-title">
+                    <div class="language-name">SQL</div>
+                    <div class="percent">30%</div>
+                  </div>
+                  <div class="value">
+                    <div class="sql-value" id="value"></div>
+                  </div>
+                </div>
+                <div class="language-box">
+                  <div class="language-title">
+                    <div class="language-name">Python</div>
+                    <div class="percent">60%</div>
+                  </div>
+                  <div class="value">
+                    <div class="python-value" id="value"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+          <div class="contact-title">CONTACT ME</div>
+          <div class="contact-box">
+            <div class="get-in-touch">
+              <div class="contact-script">
+                You want to get in touch to me, let's check these information
+                below or fill in the form to send me a message.
+              </div>
+              <div class="fullname">
+                <i class="fas fa-user"></i>
+                <div class="in-row">
+                  <div class="item1">Name</div>
+                  <div class="item2">Huynh Gia Phu</div>
+                </div>
+              </div>
+              <div class="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="in-row">
+                  <div class="item1">Address</div>
+                  <div class="item2">Ho Chi Minh City, Vietnam</div>
+                </div>
+              </div>
+              <div class="email">
+                <i class="fas fa-envelope"></i>
+                <div class="in-row">
+                  <div class="item1">Email</div>
+                  <div class="item2">20521752@gm.uit.edu.vn</div>
+                </div>
+              </div>
+            </div>
+            <div class="message-box">
+              <div class="message-me">Message me</div>
+              <div class="name-email">
+                <input
+                  type="text"
+                  class="sender-name"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  class="sender-email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                class="message-subject"
+                placeholder="Subject"
+              />
+              <input
+                type="text"
+                class="message-content"
+                placeholder="Message"
+                required
+              />
+              <input type="submit" class="send-message" value="Send message" />
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="social-media">
+            <a href="https://www.facebook.com/phu.giahuynh.27/" class="facebook"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://www.instagram.com/r1chou5e/" class="instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/PhuGiaHuynh" class="twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://github.com/HuynhGiaPhu" class="github"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="create-by">
+            Created by
+            <span class="richou5e">richou5e</span>
+            | 2021 All rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Portfolio/asset/index.js"></script>
+  </body>
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.1;
+  </script>
+</html>
